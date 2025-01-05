@@ -5,20 +5,16 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Button } from "antd";
 import Navbar from "./components/Navbar";
+import About from "./screen/About";
 
 function App() {
   return (
     <>
-<Navbar />
-
-
+      <Navbar />
 
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/about"
-            element={<Button type="primary">Button</Button>}
-          />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </>

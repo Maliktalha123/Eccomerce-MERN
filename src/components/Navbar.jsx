@@ -8,18 +8,25 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row justify-between items-center">
-      <div>
-        <img src={viteLogo} alt="Company Logo" />
+    <div className="flex flex-row justify-around items-center w-full ">
+      <div className="w-2/12 border">
+        <img src={viteLogo} alt="Company Logo" className="m-auto mt-2" />
       </div>
-      <div>
-        <p className="text-4xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi odit deleniti eius nihil, inventore voluptatibus perferendis ad!</p>
+      <div className="flex flex-row space-x-4 w-8/12 border ">
         <li>.....</li>
         <li>.....</li>
         <li>.....</li>
         <li>.....</li>
         <li>.....</li>
+        <li>....Y.</li>
         <li>.....</li>
+        <li>.....</li>
+        <li>.....</li>
+
+        <li>.....</li>
+        <li>.....</li>
+        <li>.....</li>
+        <li>....Y.</li>
         <li>.....</li>
         <li>.....</li>
         <li>.....</li>
@@ -29,7 +36,7 @@ const Navbar = () => {
         <li>.....</li>
         <li>.....</li>
       </div>
-      <div>
+      <div className="w-2/12 flex gap-6 text-2xl pl-4">
         <SearchOutlined />
         <ShoppingCartOutlined />
         <ProfileOutlined />
