@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Button } from "antd";
 import Navbar from "./components/Navbar";
 import About from "./screen/About";
+import AllProducts from "./screen/AllProducts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/about" element={<About />} />
+          <Route path="/all-products" element={<AllProducts />} />
         </Routes>
       </BrowserRouter>
     </>
