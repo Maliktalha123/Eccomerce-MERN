@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import UserTable from "../../components/admin-components/UserTable";
 
 const Users = () => {
   return (
-    <div>
-      Users
+    <div className="">
+      <UserTable />
     </div>
-  )
-}
+  );
+};
 
-export default Users
+export default Users;

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import ProductsTable from "../../components/admin-components/ProductsTable";
 
 const Products = () => {
   return (
     <div>
-      Products
+      <ProductsTable />
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

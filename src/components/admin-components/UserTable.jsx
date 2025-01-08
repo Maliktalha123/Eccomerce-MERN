@@ -1,5 +1,5 @@
 import React from 'react';
-import { Space, Table, Tag } from 'antd';
+import { Flex, Space, Table, Tag } from 'antd';
 const { Column, ColumnGroup } = Table;
 const data = [
   {
@@ -17,6 +17,34 @@ const data = [
     age: 42,
     address: 'London No. 1 Lake Park',
     tags: ['loser'],
+  }, {
+    key: '2',
+    firstName: 'Jim',
+    lastName: 'Green',
+    age: 42,
+    address: 'London No. 1 Lake Park',
+    tags: ['loser'],
+  }, {
+    key: '2',
+    firstName: 'Jim',
+    lastName: 'Green',
+    age: 42,
+    address: 'London No. 1 Lake Park',
+    tags: ['loser'],
+  }, {
+    key: '2',
+    firstName: 'Jim',
+    lastName: 'Green',
+    age: 42,
+    address: 'London No. 1 Lake Park',
+    tags: ['loser'],
+  }, {
+    key: '2',
+    firstName: 'Jim',
+    lastName: 'Green',
+    age: 42,
+    address: 'London No. 1 Lake Park',
+    tags: ['loser'],
   },
   {
     key: '3',
@@ -27,8 +55,11 @@ const data = [
     tags: ['cool', 'teacher'],
   },
 ];
-const App = () => (
-  <Table dataSource={data}>
+const UserTable = () => (
+  <Table dataSource={data} 
+  
+  style={{width:"80dvw"}}
+  >
     <ColumnGroup title="Name">
       <Column title="First Name" dataIndex="firstName" key="firstName" />
       <Column title="Last Name" dataIndex="lastName" key="lastName" />
@@ -67,4 +98,4 @@ const App = () => (
     />
   </Table>
 );
-export default App;
+export default UserTable;
